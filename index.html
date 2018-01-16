@@ -38,11 +38,11 @@
     scrollWheelZoom: false
   });
 
-  /* Control panel to display map layers */
-  // var controlLayers = L.control.layers( null, null, {
-  //  position: "topright",
-  //  collapsed: false
-  // }).addTo(map);
+   Control panel to display map layers */
+   var controlLayers = L.control.layers( null, null, {
+    position: "topright",
+    collapsed: false
+   }).addTo(map);
 
   /* Carto light-gray basemap tiles with labels */
   var light = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
@@ -66,10 +66,10 @@
   //    layer.bindPopup(feature.properties.Title);
   //  }
   // });
-  // var runLayer = omnivore.csv('data.csv', null, customLayer)
-  // .on('ready', function() {
-  //  map.fitBounds(runLayer.getBounds());
-  // }).addTo(map);
+   var runLayer = omnivore.csv('data.csv', null, customLayer)
+   .on('ready', function() {
+    map.fitBounds(runLayer.getBounds());
+  }).addTo(map);
   // controlLayers.addOverlay(customLayer, 'Markers from data.csv');
 
   </script>
